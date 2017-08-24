@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 version: '3'
+=======
+version: '2.2'
+>>>>>>> added my own configurations
 
 services:
   vpn:
-    image: hwdsl2/ipsec-vpn-server
+    build: .
+    image: 'valentinvieriu/ipsec-vpn-server:1.0.0'
     restart: always
     env_file:
       - ./vpn.env
