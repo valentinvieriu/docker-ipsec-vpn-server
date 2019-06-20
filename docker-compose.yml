@@ -7,7 +7,7 @@ version: '2.2'
 services:
   vpn:
     build: .
-    image: 'valentinvieriu/ipsec-vpn-server:1.0.0'
+    image: 'valentinvieriu/ipsec-vpn-server:1.1.0'
     restart: always
     env_file:
       - ./vpn.env
